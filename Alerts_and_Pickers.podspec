@@ -14,7 +14,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.source       = { :git => "git@github.com:pableiros/alerts-and-pickers.git", :tag => "0.0.1" }
 
-  spec.source_files  = "Classes", "Classes/**/*.{swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Source/**/*.{swift}"
 
 end
