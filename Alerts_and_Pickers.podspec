@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/pableiros/alerts-and-pickers"
-  spec.license      = { :type => "MIT", :file => "LICENCE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Pablo Bórquez" => "pablo.borquez@coppel.com" }
   spec.platform     = :ios
   spec.source       = { :git => "git@github.com:pableiros/alerts-and-pickers.git", :tag => "0.0.1" }
