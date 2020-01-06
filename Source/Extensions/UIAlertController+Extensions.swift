@@ -12,24 +12,12 @@ extension UIAlertController {
     ///   - message: alert controller's message (default is nil).
     ///   - defaultActionButtonTitle: default action button title (default is "OK")
     ///   - tintColor: alert controller's tint color (default is nil)
-    convenience init(style: UIAlertController.Style, source: UIView? = nil, title: String? = nil, message: String? = nil, tintColor: UIColor? = nil) {
+    public convenience init(style: UIAlertController.Style, source: UIView? = nil, title: String? = nil, message: String? = nil, tintColor: UIColor? = nil) {
         self.init(title: title, message: message, preferredStyle: style)
         
-        // TODO: for iPad or other views
-        let isPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
-        let root = UIApplication.shared.keyWindow?.rootViewController?.view
-        
-        //self.responds(to: #selector(getter: popoverPresentationController))
         if let source = source {
-            Log("----- source")
-            popoverPresentationController?.sourceView = source
-            popoverPresentationController?.sourceRect = source.bounds
-        } else if isPad, let source = root, style == .actionSheet {
-            Log("----- is pad")
-            popoverPresentationController?.sourceView = source
-            popoverPresentationController?.sourceRect = CGRect(x: source.bounds.midX, y: source.bounds.midY, width: 0, height: 0)
-            //popoverPresentationController?.permittedArrowDirections = .down
-            popoverPresentationController?.permittedArrowDirections = .init(rawValue: 0)
+            self.popoverPresentationController?.sourceView = source
+            self.popoverPresentationController?.sourceRect = source.bounds
         }
         
         if let color = tintColor {
@@ -72,7 +60,7 @@ extension UIAlertController {
     ///   - style: action style (default is UIAlertActionStyle.default)
     ///   - isEnabled: isEnabled status for action (default is true)
     ///   - handler: optional action handler to be called when button is tapped (default is nil)
-    func addAction(image: UIImage? = nil, title: String, color: UIColor? = nil, style: UIAlertAction.Style = .default, isEnabled: Bool = true, handler: ((UIAlertAction) -> Void)? = nil) {
+    public func addAction(image: UIImage? = nil, title: String, color: UIColor? = nil, style: UIAlertAction.Style = .default, isEnabled: Bool = true, handler: ((UIAlertAction) -> Void)? = nil) {
         //let isPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
         //let action = UIAlertAction(title: title, style: isPad && style == .cancel ? .default : style, handler: handler)
         let action = UIAlertAction(title: title, style: style, handler: handler)
