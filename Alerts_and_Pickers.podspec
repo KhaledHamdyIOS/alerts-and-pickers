@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "git@github.com:pableiros/alerts-and-pickers.git", :tag => "0.0.2" }
 
   spec.source_files  = "Source/**/*.{swift}"
-
+  spec.swift_version = '5'
 end
