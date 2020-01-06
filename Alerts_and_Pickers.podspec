@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Pablo Bórquez" => "pablo.borquez@coppel.com" }
   spec.platform     = :ios, '10.0'
-  spec.source       = { :git => "git@github.com:pableiros/alerts-and-pickers.git", :tag => "0.0.2" }
+  spec.source       = { :git => "https://github.com/pableiros/alerts-and-pickers.git", :tag => "0.0.2" }
 
   spec.source_files  = "Source/**/*.{swift}"
   spec.swift_version = '5'
