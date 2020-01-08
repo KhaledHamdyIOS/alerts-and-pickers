@@ -3,10 +3,10 @@
 </div>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Swift-4.0-orange.svg" alt="Swift 4.0"/>
+<img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift 4.0"/>
 <img src="https://img.shields.io/badge/platform-iOS-brightgreen.svg" alt="Platform: iOS"/>
-<img src="https://img.shields.io/badge/Xcode-9%2B-brightgreen.svg" alt="XCode 9+"/>
-<img src="https://img.shields.io/badge/iOS-11%2B-brightgreen.svg" alt="iOS 11"/>
+<img src="https://img.shields.io/badge/Xcode-11%2B-brightgreen.svg" alt="Xcode 11+"/>
+<img src="https://img.shields.io/badge/iOS-10%2B-brightgreen.svg" alt="iOS 10"/>
 <img src="https://img.shields.io/badge/licence-MIT-lightgray.svg" alt="Licence MIT"/>
 </a>
 </p>
@@ -25,12 +25,16 @@ Advanced usage of native UIAlertController with TextField, TextView, DatePicker,
 - [x] Button customization: image and title color.
 - [x] Understandable action button placement.
 - [x] Easy presentation.
-- [x] Pure Swift 4.
+- [x] Pure Swift 5.
 
 <div align = "center">
 <img src="Assets/gifs/actionSheet-.gif" width="400" />
 <img src="Assets/gifs/alert-.gif" width="400" />
 </div>
+
+## Cocoapods
+
+    pod 'Alerts_and_Pickers'
 
 ## Usage
 
@@ -454,8 +458,8 @@ Download and drop `/Source` folder in your project.
 
 ## Requirements
 
-* Swift 4
-* iOS 11 or higher
+* Swift 5
+* iOS 10 or higher
 
 ## Authors
 
