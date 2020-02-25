@@ -38,6 +38,8 @@ extension UIAlertController {
     ///   - completion: an optional completion handler to be called after presenting alert controller (default is nil).
     public func show(animated: Bool = true, vibrate: Bool = false, style: UIBlurEffect.Style? = nil, completion: (() -> Void)? = nil) {
         
+        self.pruneNegativeWidthConstraints()
+        
         /// TODO: change UIBlurEffectStyle
         if let style = style {
             for subview in view.allSubViewsOf(type: UIVisualEffectView.self) {
@@ -50,6 +52,14 @@ extension UIAlertController {
             
             if vibrate {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+            }
+        }
+    }
+    
+    func pruneNegativeWidthConstraints() {
+        for subView in self.view.subviews {
+            for constraint in subView.constraints where constraint.debugDescription.contains("width == - 16") {
+                subView.removeConstraint(constraint)
             }
         }
     }
