@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84988CC24049E19007393A4 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84988CB24049E19007393A4 /* UINavigationController+Extensions.swift */; };
+		F84988CE24049E3E007393A4 /* UITabBarController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84988CD24049E3E007393A4 /* UITabBarController+Extensions.swift */; };
 		FA005E922015D769001EA8C6 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA005E912015D769001EA8C6 /* Contacts.swift */; };
 		FA005E942015E490001EA8C6 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA005E932015E490001EA8C6 /* UISearchBar+Extensions.swift */; };
 		FA005E9620162BB5001EA8C6 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA005E9520162BB5001EA8C6 /* Assets.swift */; };
@@ -73,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84988CB24049E19007393A4 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		F84988CD24049E3E007393A4 /* UITabBarController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extensions.swift"; sourceTree = "<group>"; };
 		FA005E912015D769001EA8C6 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		FA005E932015E490001EA8C6 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
 		FA005E9520162BB5001EA8C6 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 				FA005E932015E490001EA8C6 /* UISearchBar+Extensions.swift */,
 				FAAB5CA3201DEE0B00CCE04D /* UIApplication+Extensions.swift */,
 				FAAB5CA5201DEE9C00CCE04D /* UIViewController+Extensions.swift */,
+				F84988CB24049E19007393A4 /* UINavigationController+Extensions.swift */,
+				F84988CD24049E3E007393A4 /* UITabBarController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAB5CA4201DEE0B00CCE04D /* UIApplication+Extensions.swift in Sources */,
+				F84988CC24049E19007393A4 /* UINavigationController+Extensions.swift in Sources */,
 				FA3BB2C72008B46900E06F8F /* AppDelegate.swift in Sources */,
 				FA3BB2C12008B46900E06F8F /* ImagePickerViewController.swift in Sources */,
 				FA3BB2BC2008B46900E06F8F /* Common+Extensions.swift in Sources */,
@@ -601,6 +608,7 @@
 				FAAB5C89201BCA6700CCE04D /* CurrencyCell.swift in Sources */,
 				FA3BB2C52008B46900E06F8F /* OneTextFieldViewController.swift in Sources */,
 				FA3BB2BE2008B46900E06F8F /* UITextField+Extensions.swift in Sources */,
+				F84988CE24049E3E007393A4 /* UITabBarController+Extensions.swift in Sources */,
 				FA3BB2B62008B46800E06F8F /* String+Extensions.swift in Sources */,
 				FAAB5C83201BC16500CCE04D /* LocaleInfo.swift in Sources */,
 				FA005E942015E490001EA8C6 /* UISearchBar+Extensions.swift in Sources */,

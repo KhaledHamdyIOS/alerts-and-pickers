@@ -46,7 +46,8 @@ extension UIAlertController {
         }
         
         DispatchQueue.main.async {
-            UIApplication.shared.keyWindow?.rootViewController?.present(self, animated: animated, completion: completion)
+            UIApplication.shared.keyWindow?.rootViewController?.topMostViewController().present(self, animated: animated, completion: completion)
+            
             if vibrate {
                 AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
             }
